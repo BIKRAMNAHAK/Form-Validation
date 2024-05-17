@@ -1,0 +1,95 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form class="form_border" onsubmit="return validateForm()">
+        <table width="700px" align="center" cellspacing="20px" class="mx-0">
+            <tr>
+                <th>
+                    Srl no:
+                </th>
+                <td>
+                    <input type="number" id="srl_no" required>
+                </td>
+                <th>
+                    <label for="fname">Fname:</label>
+                </th>
+                <td>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="lname">Lname:</label>
+                </th>
+                <td>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label >
+                        Email :
+                    </label>
+                </th>
+                <th>
+                    <input type="email" placeholder="Email" id="email">
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="pass">Password:</label>
+                </th>
+                <td>
+                    <input type="password" name="password" id="pass" placeholder="Enter your password" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="mobile">Mobile no:</label>
+                </th>
+                <td>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Enter mobile number" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+
+    <table class="table striped" border="2px" width="1140px" align="center" id="show">
+        <thead>
+            <tr>
+                <th>Srl. No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Mobile Number</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="js/script.js">
+        
+    </script>
+
+</body>
+
+</html>
